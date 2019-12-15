@@ -83,8 +83,7 @@ void BrowserHistory::readFile(string fileName)
     string url_from_file = "";
     size_t filesize_from_file;
     inFile.open(fileName);
-    while (!inFile.eof()){
-            inFile>>var;
+    while (inFile>>var){
             if (var == "visit")
             {
                 inFile>> url_from_file;
