@@ -9,7 +9,7 @@
 using std::string;
 using std::list;
 
-class Site {
+class Site {                                               // creating a site object containing a string for url as well as a file size variable 
 private:
     string url_ = "";
     size_t filesize_ = 0;
